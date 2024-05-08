@@ -6,13 +6,21 @@
 }
 
 html, body {
+    /*background-image : url('APS\images\1000_F_193122610_8uLVsLECbzNmX2hFKkib7xp2sKb5QjNP.jpg') ;
+    background-size : cover;
+    background-repet : no-repeat; */
     background-color: #e6e6e6;
     overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
 }
 
+#log{
+    border : solid black;
+    width : 300px;
+    height : 100px;
+}
+
 
 #MENU1 > a{
-    top : 20px;
     margin-left: 45px;
     font-size : 25px;
     position: relative;
@@ -59,9 +67,10 @@ html, body {
 
 
 .logos{ 
+    font-size : 16px;
     height: 100%;
     position : absolute;
-    top : 0;
+    top : 10px;
     right : 0px;
     display: inline-block;
 
