@@ -253,7 +253,11 @@ input, select {
     box-sizing: border-box;
 }
 
-#buts {
+.bute{
+    width: 100%;
+}
+
+.buts {
     width: 100%;
     padding: 10px;
     background-color: #28a745;
@@ -331,4 +335,27 @@ input, select {
     background-color: blue;
     color: white;
     transform: scale(1.2);
+}
+
+/*------------------------------------------------------CSS DA PAGINA HTML FINAL------------------------------------------------ */
+
+.mensagem {
+    background-color: #f9f9f9;
+    border: 2px solid #0073e6;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.mensagem h1 {
+    font-size: 24px;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+.mensagem p {
+    font-size: 18px;
+    line-height: 1.6;
 }
