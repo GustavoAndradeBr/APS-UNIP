@@ -1,18 +1,18 @@
-*{
+*{                           /*FAÇO ISSO PARA TIRAR TODOS OS ESPAÇAMENTOS PADRAO DO NAVEGADOR*/ 
     color :rgb(0, 0, 0);
     margin : 0;
     padding : 0;
     box-sizing: border-box;
 }
 
-html, body {
+html, body {  /*NOSSO BACKGROUND DO SITE*/
     background-image : url('C:/Users/andra/Downloads/PROJETO/APS/images/Beautiful-nature-landscape-lake-mountains-trees-village-blue-sky-white-clouds_2560x1600.jpg') ;
     background-size : cover;
     background-repeat : no-repeat;
-    overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal NÃO APAGAR ESSA LINHA !!!! */
 }
 
-#final{
+#final{                               /*NOSSSA BARRA FINAL DO SITE LA EM BAIXAO*/
     background-color: #e6e6e69c;
     display : flex;
     justify-content :center;
@@ -34,20 +34,20 @@ html, body {
     text-align: center;
 }
 
-#log{
+#log{ /*NOSSA LOGO DO SITE*/
     border : solid black;
     width : 300px;
     height : 100px;
 }
 
 
-#MENU1 > a{
+#MENU1 > a{  /*NOSSO MENU SUPERIOR*/
     margin-left: 45px;
     font-size : 25px;
     position: relative;
 }
 
-#MENU1{
+#MENU1{     /*NOSSO MENU SUPERIOR*/
     height : 100px;
     text-align: center; 
     position : relative;
@@ -55,7 +55,7 @@ html, body {
     margin : auto;
 }
 
-.apresenta p {
+.apresenta p { /*CAIXINHA DE APRESENTAÇÃO*/
     background-color: #e6e6e69c;
     padding: 5px;
     border : solid 2px #daa520;
@@ -64,11 +64,11 @@ html, body {
     font-family : Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui , Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#imag{
+#imag{ /*FIZ ISSO PARA TIRAR O RISCO ABAIXO DAS IMAGENS LINKs*/
     text-decoration: none;
 }
 
-#texto {
+#texto { /*Texto do hotel*/
     background-color: #e6e6e69c;
     padding: 10px;
     border : solid 2px #daa520;
@@ -77,7 +77,7 @@ html, body {
     font-family : Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#P{
+#P{ /*TEXTO DOS NOSSOS CLIENTES VISITANTES*/
     background-color: #e6e6e69c;
     width : 100%;
     padding: 5px;
@@ -87,7 +87,7 @@ html, body {
     font-family : Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui , Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#titulo {
+#titulo { /*ESTILO DO NOSSO TITULO PRINCIPAL*/
     font-size : 2em;
     text-align : center;
     background-image : url("C:/Users/andra/Downloads/PROJETO/APS/images/transferir.webp");
@@ -99,7 +99,7 @@ html, body {
     font-family : Verdana, sans-serif;
 }
 
-.logos{ 
+.logos{  /*REDES SOCIAIS*/
     font-size : 16px;
     height: 100%;
     position : absolute;
@@ -120,7 +120,7 @@ html, body {
     width : 30px;
 }
 
-#frase{
+#frase{ /*FIZ SÓ PARA DESTACAR A PALAVRA VIGILANCIA*/
     font-weight : bold;
     color : red;
 }
@@ -129,7 +129,7 @@ html, body {
     text-decoration : underline;
 }
 
-.carrossel{
+.carrossel{     /*IAMGENS  DOS QUARTOS MOSTRADAS NO JAVA E NA PAGINA*/
         overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
         overflow-y: hidden; /* Oculta a barra de rolagem vertical */
         white-space: nowrap;
@@ -165,14 +165,14 @@ html, body {
     gap : 20px;
 }
 
-.config{ 
+.config{  /*DIV PAI DA AREA MOSTRADA NAS SEÇÕES DE CADA QUARTO*/
     border: solid 2px #daa520;
     margin-left: -32px;
     height: 260px;
     display: flex;
     align-items: center;
     flex-direction: row;
-    background-color: #e6e6e69c;
+    background-color: #e6e6e6d1;
     font-family : Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui , Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
     padding-right: 20px;
 }
@@ -204,9 +204,131 @@ html, body {
     background-color: white;
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
+
 .butao:hover{
     background-color: blue;
     color: white;
     transform: scale(1.2)
 }
 
+
+/*------------------------------------------------------CSS DA PAGINA HTML AGENDAMENTO------------------------------------------------ */
+
+
+#reserva{  /*FORM DAS INFOMAÇOES CRIEI PQ IA FAZER UM BANCO MAS NAO TEMOS TEMPO ENTAO FICOU PARA FACILITAR ORGANIZAÇÃO*/
+    /* border : solid 2px #000000; */
+    display: flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadro {   /*AREA ONDE FICARA OS LABEL E INPUTS*/
+    border : solid 2px #000000;
+    border-radius: 8px;
+    margin-left: 35%;
+    font-family: Arial, sans-serif;
+    height: 627px;
+    width: 450px;
+    background-color: #e6e6e69c;
+}
+
+
+.quadro h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+ 
+label {
+    padding: 5px;
+    display: flex;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 90%;
+    padding: 8px;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+#buts {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/*------------------------------------------------------CSS DA PAGINA HTML LOGIN------------------------------------------------ */
+
+
+.area{ /*DIV PAI PARA ORGANIZAÇÃO*/
+    display: flex;
+    flex-direction : row;
+    height : 420px;
+    width: 620px;
+    margin: auto;
+}
+
+#criarti{  /*TITULO DA CRIAR CONTA*/
+    text-align: center;
+    margin-top:15px;
+}
+
+.criar{  /*DIV DE CRIAÇÃO DE CONTA*/
+    border-radius : 10px;
+    border: solid 2px #daa520;
+    display: flex;
+    flex-direction: column;
+    background-color : #e6e6e6d1;
+    height : 105%;
+    width: 300px;
+    padding-left: 20px;
+    margin-right : 10px;
+}
+
+#loginti{       /*TITULO DA LOGIN*/
+    text-align: center;
+}
+
+.login{   /*DIV DO LOGIN*/
+    border-radius : 10px;
+    border: solid 2px #daa520;
+    display: flex;
+    flex-direction: column;
+    background-color : #e6e6e6d1;
+    height : 300px;
+    width: 300px;
+    padding-left: 20px;
+}
+
+#senha{  /*ESQUECI MINHA SENHA*/
+    margin-left: 30px;
+}
+
+#infoL{  /*DIV FILHA PARA CENTRALIZAR O LOGIN*/
+    margin: auto;
+}
+
+.but{ /*DEIXAR OS BOTOES BONITINHOS NE */
+    margin-top : 25px;
+    height: 30px;
+    width: 80px;
+    white-space: pre-line;
+    border: solid 2px #daa520;
+    border-radius: 20px;
+    color: #daa520;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.but:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.2);
+}
